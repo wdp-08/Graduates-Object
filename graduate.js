@@ -1,8 +1,18 @@
 function graduates(students) {
- 
+    let hasil = {};
+    for (let i = 0; i < students.length; i++) {
+      if (hasil[students[i].class] == undefined) {
+        hasil[students[i].class] = [];
+      }
+      if (students[i].score > 75) {
+        let obj = {};
+        obj.name = students[i].name;
+        obj.score = students[i].score;
+        hasil[students[i].class].push(obj);
+      }
+    }
+    return hasil;
   }
-  return hasil;
-}
   
   console.log(graduates([
     {
