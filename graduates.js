@@ -10,7 +10,7 @@ function graduates (students) {
             let student = {}
             student.name = students[i]['name']
             student.score = students[i]['score']
-            result[d].push(students[i]);
+            result[d].push(student);
         }
     }
     return result;
