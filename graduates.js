@@ -34,7 +34,7 @@ class: 'wolves'
 }
 ];
 
-var passedStudents = graduates(dataStudent);
+const passedStudents = graduates(dataStudent);
 
 console.log("Siswa yang lulus:");
 console.log(passedStudents);
