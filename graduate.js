@@ -1,15 +1,5 @@
 function graduates(students) {
-  let hasil = {};
-  for (let i = 0; i < students.length; i++) {
-    if (hasil[students[i].class] == undefined) {
-      hasil[students[i].class] = [];
-    }
-    if (students[i].score > 75) {
-      let object = {};
-      object.name = students[i].name;
-      object.score = students[i].score;
-      hasil[students[i].class].push(object);
-    }
+ 
   }
   return hasil;
 }
