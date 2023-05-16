@@ -7,7 +7,9 @@ function graduates (students) {
             result[d] = []
         }
         if(students[i]['score'] > 75){
-            delete students[i]['class'];
+            let student = {}
+            student.name = students[i]['name']
+            student.score = students[i]['score']
             result[d].push(students[i]);
         }
     }
